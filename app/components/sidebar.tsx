@@ -118,7 +118,7 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          DMO.CHAT
+          DMO.chat
         </div>
         <div className={styles["sidebar-sub-title"]}>
           Visit <a href="https://admin.dmo.chat" target="_blank" rel="noopener noreferrer">here </a> 
