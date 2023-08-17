@@ -122,7 +122,7 @@ export function SideBar(props: { className?: string }) {
         </div>
         <div className={styles["sidebar-sub-title"]}>
           Visit <a href="https://admin.dmo.chat" target="_blank" rel="noopener noreferrer">here</a> 
-          or <a href="http://45.77.205.116:3000" target="_blank" rel="noopener noreferrer">here(CN)</a> for your own key!
+           or <a href="http://45.77.205.116:3000" target="_blank" rel="noopener noreferrer">here(CN)</a> for your own key!
 
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
