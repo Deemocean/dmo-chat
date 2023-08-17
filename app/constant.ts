@@ -1,5 +1,5 @@
-export const OWNER = "Yidadaa";
-export const REPO = "ChatGPT-Next-Web";
+export const OWNER = "Deemocean";
+export const REPO = "dmo-chat";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
@@ -106,6 +106,50 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "gpt-3.5-turbo-16k-0613",
+    available: true,
+  },
+  {
+    name: "claude-instant-1",
+    available: true,
+  },
+  {
+    name: "claude-2",
+    available: true,
+  },
+  {
+    name: "ERNIE-Bot",
+    available: true,
+  },
+  {
+    name: "ERNIE-Bot-turbo",
+    available: true,
+  },
+  {
+    name: "PaLM-2",
+    available: true,
+  },
+  {
+    name: "chatglm_pro",
+    available: true,
+  },
+  {
+    name: "chatglm_std",
+    available: true,
+  },
+  {
+    name: "chatglm_lite",
+    available: true,
+  },
+  {
+    name: "qwen-v1",
+    available: true,
+  },
+  {
+    name: "qwen-plus-v1",
+    available: true,
+  },
+  {
+    name: "SparkDesk",
     available: true,
   },
 ] as const;
