@@ -121,8 +121,9 @@ export function SideBar(props: { className?: string }) {
           DMO.CHAT
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Please visit <a href="https://admin.dmo.chat" target="_blank" rel="noopener noreferrer">admin.dmo.chat</a> to get your OWN key!
-          (There is a cap for the shared key)
+          Visit <a href="https://admin.dmo.chat" target="_blank" rel="noopener noreferrer">here</a>
+          or <a href="http://45.77.205.116:3000" target="_blank" rel="noopener noreferrer">here</a> for your own key!
+
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
