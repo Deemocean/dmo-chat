@@ -71,7 +71,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "ChatGPT Next Web App",
+      "shortDescription": "DMO.chat",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
@@ -95,10 +95,10 @@
     },
     "windows": [
       {
-        "fullscreen": false,
+        "fullscreen": true,
         "height": 600,
         "resizable": true,
-        "title": "ChatGPT Next Web",
+        "title": "DMO.chat",
         "width": 960,
         "hiddenTitle": true,
         "titleBarStyle": "Overlay"
