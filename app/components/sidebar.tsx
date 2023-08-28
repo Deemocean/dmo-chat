@@ -121,7 +121,6 @@ export function SideBar(props: { className?: string }) {
           DMO.chat
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          :D
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
