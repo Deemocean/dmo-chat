@@ -10,7 +10,7 @@ const en: LocaleType = {
   Error: {
     Unauthorized: isApp
       ? "Invalid API Key, please check it in [Settings](/#/settings) page."
-      : "Token Ran Out: Check [admin page](https://admin.dmo.chat) ([admin page CN](http://45.77.205.116:3000/))",
+      : "Token Ran Out: Check [admin page](https://admin.dmo.chat)",
   },
   Auth: {
     Title: "Need Access Code",
