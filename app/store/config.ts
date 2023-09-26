@@ -165,7 +165,7 @@ export const useAppConfig = createPersistStore(
       }
 
       if (version < 3.8) {
-        state.lastUpdate = Date.now();
+        //state.lastUpdate = Date.now();
       }
 
       return state as any;
