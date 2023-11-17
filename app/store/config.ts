@@ -34,7 +34,7 @@ export const DEFAULT_CONFIG = {
   tightBorder: true,
   sendPreviewBubble: true,
   enableAutoGenerateTitle: true,
-  lastUpdate: -1,
+  // lastUpdate: -1,
   sidebarWidth: DEFAULT_SIDEBAR_WIDTH,
 
   disablePromptHint: false,
