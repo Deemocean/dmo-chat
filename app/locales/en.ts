@@ -9,8 +9,8 @@ const en: LocaleType = {
   WIP: "Coming Soon...",
   Error: {
     Unauthorized: isApp
-      ? "Invalid API Key, please check it in [Settings](/#/settings) page."
-      : "Token Ran Out: Check [admin page](https://admin.dmo.chat)",
+      ? "Public Access to DMO.chat is now closed, please [register your own account](https://dmo.chat/instructions/)"
+      : "Token Ran Out(Do you have enough Quota left?): Check [admin page](https://admin.dmo.chat)",
   },
   Auth: {
     Title: "Need Access Code",
