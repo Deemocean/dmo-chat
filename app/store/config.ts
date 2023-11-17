@@ -32,6 +32,7 @@ export const DEFAULT_CONFIG = {
   tightBorder: true,
   sendPreviewBubble: true,
   enableAutoGenerateTitle: true,
+  lastUpdate: -1,
   sidebarWidth: DEFAULT_SIDEBAR_WIDTH,
 
   disablePromptHint: false,
@@ -165,7 +166,7 @@ export const useAppConfig = createPersistStore(
       }
 
       if (version < 3.8) {
-        //state.lastUpdate = Date.now();
+        state.lastUpdate = Date.now();
       }
 
       return state as any;
