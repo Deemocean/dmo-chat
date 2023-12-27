@@ -65,9 +65,9 @@ export const REQUEST_TIMEOUT_MS = 60000;
 export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
-  OpenAI = "OpenAI",
-  Azure = "Azure",
-  Google = "Google",
+  OpenAI = "DMO",
+  // Azure = "Azure",
+  // Google = "Google",
 }
 
 export enum ModelProvider {
@@ -96,7 +96,7 @@ export const Google = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by OpenAI.
+You are a online chat service called DMO chat created by DMO.
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
@@ -114,6 +114,25 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
+    name: "gemini-pro",
+    available: true,
+    provider: {
+      id: "google",
+      providerName: "Google",
+      providerType: "google",
+    },
+  },
+  
+  {
+    name: "gpt-4-1106-preview",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "OpenAI",
+      providerType: "openai",
+    },
+  },
+  {
     name: "gpt-4",
     available: true,
     provider: {
@@ -124,15 +143,6 @@ export const DEFAULT_MODELS = [
   },
 
 
-  {
-    name: "gpt-4-1106-preview",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
 
   {
     name: "gpt-3.5-turbo",
@@ -144,15 +154,7 @@ export const DEFAULT_MODELS = [
     },
   },
 
-  {
-    name: "gemini-pro",
-    available: true,
-    provider: {
-      id: "google",
-      providerName: "Google",
-      providerType: "google",
-    },
-  },
+
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
