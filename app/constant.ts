@@ -66,8 +66,8 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
   OpenAI = "DMO",
-  // Azure = "Azure",
-  // Google = "Google",
+  Azure = "Azure",
+  Google = "Google",
 }
 
 export enum ModelProvider {
@@ -122,7 +122,7 @@ export const DEFAULT_MODELS = [
       providerType: "google",
     },
   },
-  
+
   {
     name: "gpt-4-1106-preview",
     available: true,
