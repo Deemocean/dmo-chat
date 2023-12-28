@@ -66,8 +66,8 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
   OpenAI = "OpenAI",
-  Azure = "Azure",
   Google = "Google",
+  Azure = "Azure",
 }
 
 export enum ModelProvider {
@@ -114,12 +114,12 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
-    name: "gemini-pro",
+    name: "gpt-3.5-turbo",
     available: true,
     provider: {
-      id: "google",
-      providerName: "Google",
-      providerType: "google",
+      id: "openai",
+      providerName: "OpenAI",
+      providerType: "openai",
     },
   },
 
@@ -141,18 +141,16 @@ export const DEFAULT_MODELS = [
       providerType: "openai",
     },
   },
-
-
-
   {
-    name: "gpt-3.5-turbo",
+    name: "gemini-pro",
     available: true,
     provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
+      id: "google",
+      providerName: "Google",
+      providerType: "google",
     },
   },
+
 
 
 ] as const;

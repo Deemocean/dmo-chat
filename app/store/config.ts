@@ -27,7 +27,7 @@ export enum Theme {
 
 export const DEFAULT_CONFIG = {
   lastUpdate: Date.now(), // times
-  submitKey: SubmitKey.CtrlEnter as SubmitKey,
+  submitKey: SubmitKey.Enter as SubmitKey,
   avatar: "1f603",
   fontSize: 14,
   theme: Theme.Dark as Theme,
@@ -46,7 +46,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gemini-pro" as ModelType,
+    model: "gpt-3.5-turbo" as ModelType,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 4000,
