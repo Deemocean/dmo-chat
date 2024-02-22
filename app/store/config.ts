@@ -26,8 +26,9 @@ export enum Theme {
 }
 
 export const DEFAULT_CONFIG = {
-  lastUpdate: Date.now(), // times
-  submitKey: SubmitKey.Enter as SubmitKey,
+  lastUpdate: Date.now(), // timestamp, to merge state
+
+  submitKey: SubmitKey.Enter,
   avatar: "1f603",
   fontSize: 14,
   theme: Theme.Dark as Theme,
@@ -91,7 +92,7 @@ export const ModalConfigValidator = {
     return limitNumber(x, -2, 2, 0);
   },
   temperature(x: number) {
-    return limitNumber(x, 0, 1, 1);
+    return limitNumber(x, 0, 2, 1);
   },
   top_p(x: number) {
     return limitNumber(x, 0, 1, 1);
